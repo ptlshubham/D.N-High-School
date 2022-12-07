@@ -1,0 +1,236 @@
+<app-header></app-header>
+
+<body class="defult-home">
+
+<!-- Main content Start -->
+<div class="main-content" *ngIf="choice=='primary'">
+    <!-- Breadcrumbs Start -->
+    <!-- <div class="rs-breadcrumbs breadcrumbs-overlay">
+            <div class="breadcrumbs-img">
+                <img src="assets/images/breadcrumbs/5.jpg" alt="Breadcrumbs Image">
+            </div>
+            <div class="breadcrumbs-text white-color padding">
+                <h1 class="page-title white-color">Contact Us</h1>
+                <ul>
+                    <li>
+                        <a class="active" href="index.html">Home</a>
+                    </li>
+                    <li>Contact Us</li>
+                </ul>
+            </div>
+        </div> -->
+    <!-- Breadcrumbs End -->
+
+    <!-- Contact Section Start -->
+    <div class="contact-page-section pt-40 pb-100 md-pt-70 md-pb-70">
+        <div class="container">
+            <div class="row rs-contact-box mb-90 md-mb-50">
+                <div class="col-lg-4 col-md-12-4 lg-pl-0 sm-mb-30 md-mb-30">
+                    <div class="address-item">
+                        <div class="icon-part">
+                            <i class="fa fa-map fa-4x" style="color: #236094;"></i>
+                        </div>
+                        <div class="address-text">
+                            <span class="label">Address</span>
+                            <span class="des">D. N. High School Campus, Station Road, Anand – 388001, Gujarat, India</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 lg-pl-0 sm-mb-30 md-mb-30">
+                    <div class="address-item">
+                        <div class="icon-part">
+                            <i class="fa fa-envelope fa-4x" style="color: #236094;"></i>
+                        </div>
+                        <div class="address-text">
+                            <span class="label">Email Address</span>
+                            <span class="des"><a href="mailto:dnp@cesociety.in">dnp@cesociety.in</a></span> <br>
+                            <!-- <span class="des"><a href="mailto:dnhs@cesociety.in">dnhs@cesociety.in</a></span> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 lg-pl-0 sm-mb-30">
+                    <div class="address-item">
+                        <div class="icon-part">
+                            <i class="fa fa-phone fa-4x" style="color: #236094;"></i>
+                        </div>
+                        <div class="address-text">
+                            <span class="label">Phone Number</span>
+                            <span class="des"><a href="tel: (02692) - 269060"> (02692) - 269060</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-6 md-mb-30">
+                    <!-- Map Section Start -->
+                    <div class="contact-map3">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.6157173255538!2d72.95990161427343!3d22.556063639263385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e4c2868091d3f%3A0x733d80936c1de6ab!2sD%20N%20High%20school!5e0!3m2!1sen!2sin!4v1657966518146!5m2!1sen!2sin"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <div class="col-lg-6 pl-60 md-pl-15">
+                    <div class="contact-comment-box">
+                        <div class="inner-part">
+                            <h2 class="title mb-mb-15">Get In Touch</h2>
+                            <p>We welcome your inputs and suggestions to constantly improve upon the functioning of
+                                the institute. </p>
+                        </div>
+                        <div id="form-messages"></div>
+                        <form id="contact-form" method="post" action="mailer.php">
+                            <fieldset>
+                                <div class="row">
+                                    <div class="col-lg-6 mb-35 col-md-6 col-sm-6">
+                                        <input class="from-control" type="text" id="name" name="name"
+                                            placeholder="Name" required="">
+                                    </div>
+                                    <div class="col-lg-6 mb-35 col-md-6 col-sm-6">
+                                        <input class="from-control" type="text" id="email" name="email"
+                                            placeholder="Email" required="">
+                                    </div>
+                                    <div class="col-lg-6 mb-35 col-md-6 col-sm-6">
+                                        <input class="from-control" type="text" id="phone" name="phone"
+                                            placeholder="Phone" required="">
+                                    </div>
+                                    <div class="col-lg-6 mb-35 col-md-6 col-sm-6">
+                                        <input class="from-control" type="text" id="subject" name="subject"
+                                            placeholder="Subject" required="">
+                                    </div>
+
+                                    <div class="col-lg-12 mb-50">
+                                        <textarea class="from-control" id="message" name="message"
+                                            placeholder=" Message" required=""></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-group mb-0">
+                                    <input class="btn-send" type="submit" value="Submit Now" style="background-color: #236094;">
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact Section End -->
+</div>
+<!-- Main content End -->
+
+
+    <!-- Main content Start -->
+    <div class="main-content"  *ngIf="choice=='secondary'">
+        <!-- Breadcrumbs Start -->
+        <!-- <div class="rs-breadcrumbs breadcrumbs-overlay">
+                <div class="breadcrumbs-img">
+                    <img src="assets/images/breadcrumbs/5.jpg" alt="Breadcrumbs Image">
+                </div>
+                <div class="breadcrumbs-text white-color padding">
+                    <h1 class="page-title white-color">Contact Us</h1>
+                    <ul>
+                        <li>
+                            <a class="active" href="index.html">Home</a>
+                        </li>
+                        <li>Contact Us</li>
+                    </ul>
+                </div>
+            </div> -->
+        <!-- Breadcrumbs End -->
+
+        <!-- Contact Section Start -->
+        <div class="contact-page-section pt-40 pb-100 md-pt-70 md-pb-70">
+            <div class="container">
+                <div class="row rs-contact-box mb-90 md-mb-50">
+                    <div class="col-lg-4 col-md-12-4 lg-pl-0 sm-mb-30 md-mb-30">
+                        <div class="address-item">
+                            <div class="icon-part">
+                                <i class="fa fa-map fa-4x theme-color"></i>
+                            </div>
+                            <div class="address-text">
+                                <span class="label">Address</span>
+                                <span class="des">D. N. High School Campus, Station Road, Anand – 388001, Gujarat, India</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 lg-pl-0 sm-mb-30 md-mb-30">
+                        <div class="address-item">
+                            <div class="icon-part">
+                                <i class="fa fa-envelope fa-4x theme-color"></i>
+                            </div>
+                            <div class="address-text">
+                                <span class="label">Email Address</span>
+                                <span class="des"><a href="mailto:dns@cesociety.in">dns@cesociety.in</a></span> <br>
+                                <span class="des"><a href="mailto:dnhs@cesociety.in">dnhs@cesociety.in</a></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 lg-pl-0 sm-mb-30">
+                        <div class="address-item">
+                            <div class="icon-part">
+                                <i class="fa fa-phone fa-4x theme-color"></i>
+                            </div>
+                            <div class="address-text">
+                                <span class="label">Phone Number</span>
+                                <span class="des"><a href="tel: (02692) - 240668"> (02692) - 240668</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col-lg-6 md-mb-30">
+                        <!-- Map Section Start -->
+                        <div class="contact-map3">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.6157173255538!2d72.95990161427343!3d22.556063639263385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e4c2868091d3f%3A0x733d80936c1de6ab!2sD%20N%20High%20school!5e0!3m2!1sen!2sin!4v1657966518146!5m2!1sen!2sin"
+                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 pl-60 md-pl-15">
+                        <div class="contact-comment-box">
+                            <div class="inner-part">
+                                <h2 class="title mb-mb-15">Get In Touch</h2>
+                                <p>We welcome your inputs and suggestions to constantly improve upon the functioning of
+                                    the institute. </p>
+                            </div>
+                            <div id="form-messages"></div>
+                            <form id="contact-form" method="post" action="mailer.php">
+                                <fieldset>
+                                    <div class="row">
+                                        <div class="col-lg-6 mb-35 col-md-6 col-sm-6">
+                                            <input class="from-control" type="text" id="name" name="name"
+                                                placeholder="Name" required="">
+                                        </div>
+                                        <div class="col-lg-6 mb-35 col-md-6 col-sm-6">
+                                            <input class="from-control" type="text" id="email" name="email"
+                                                placeholder="Email" required="">
+                                        </div>
+                                        <div class="col-lg-6 mb-35 col-md-6 col-sm-6">
+                                            <input class="from-control" type="text" id="phone" name="phone"
+                                                placeholder="Phone" required="">
+                                        </div>
+                                        <div class="col-lg-6 mb-35 col-md-6 col-sm-6">
+                                            <input class="from-control" type="text" id="subject" name="subject"
+                                                placeholder="Subject" required="">
+                                        </div>
+
+                                        <div class="col-lg-12 mb-50">
+                                            <textarea class="from-control" id="message" name="message"
+                                                placeholder=" Message" required=""></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="form-group mb-0">
+                                        <input class="btn-send" type="submit" value="Submit Now">
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Contact Section End -->
+    </div>
+    <!-- Main content End -->
+</body>
+<app-footer></app-footer>

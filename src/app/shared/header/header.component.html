@@ -1,0 +1,1254 @@
+<div *ngIf="choice=='primary'">
+<div id="accordion" class="accordion">
+    <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+        <section class="servicesHome">
+            <div class="container">
+                <div class="row card1" style="background-color: #236094;">
+                    <a data-toggle="collapse" data-bs-parent="#accordion" data-bs-toggle="collapse" href="#collapseTwo">
+                        <i class="fa fa-times-circle" style="float: right; color: white; font-size:24px"></i></a>
+                    <h6 style="color: white;text-align: center;">View Course</h6>
+                    <div class="col-md-3">
+                        <div class="servicesHome-box">
+                            <ul>
+                                <li (click)="searchSchool('preschool')" data-bs-toggle="collapse" href="#collapseTwo"><i
+                                        class="fa fa-arrow-right"></i>Preschool</li>
+                                <li (click)="searchSchool('std11to12')" data-bs-toggle="collapse" href="#collapseTwo"><i
+                                        class="fa fa-arrow-right"></i>Standard 11 to 12</li>
+                                <li (click)="searchSchool('bcom')" data-bs-toggle="collapse" href="#collapseTwo"><i
+                                        class="fa fa-arrow-right"></i> B.Com.</li>
+                                <li (click)="searchSchool('bsc')" data-bs-toggle="collapse" href="#collapseTwo"><i
+                                        class="fa fa-arrow-right"></i> B.Sc.</li>
+                                <li (click)="searchSchool('med')" data-bs-toggle="collapse" href="#collapseTwo"><i
+                                        class="fa fa-arrow-right"></i> M.Ed.</li>
+                                <li (click)="searchSchool('phd')" data-bs-toggle="collapse" href="#collapseTwo"><i
+                                        class="fa fa-arrow-right"></i> Ph.D.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="servicesHome-box">
+                            <ul style="color:white">
+                                <li (click)="searchSchool('std1to5')" data-bs-toggle="collapse" href="#collapseTwo"><i
+                                        class="fa fa-arrow-right"></i> Standard 1 to 5</li>
+                                <li (click)="searchSchool('ba')" data-bs-toggle="collapse" href="#collapseTwo"><i
+                                        class="fa fa-arrow-right"></i> B.A.</li>
+                                <li (click)="searchSchool('bed')" data-bs-toggle="collapse" href="#collapseTwo"><i
+                                        class="fa fa-arrow-right"></i> B.Ed.</li>
+                                <li (click)="searchSchool('mlt')" data-bs-toggle="collapse" href="#collapseTwo"><i
+                                        class="fa fa-arrow-right"></i> MLT</li>
+                                <li (click)="searchSchool('msw')" data-bs-toggle="collapse" href="#collapseTwo"><i
+                                        class="fa fa-arrow-right"></i> M.S.W.</li>
+                                <li (click)="searchSchool('bscit')" data-bs-toggle="collapse" href="#collapseTwo"><i
+                                        class="fa fa-arrow-right"></i> B.Sc. IT</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="servicesHome-box">
+                            <ul style="color:white">
+                                <li (click)="searchSchool('std6to8')" data-bs-toggle="collapse" href="#collapseTwo"><i
+                                        class="fa fa-arrow-right"></i> Standard 6 to 8</li>
+                                <li (click)="searchSchool('bba')" data-bs-toggle="collapse" href="#collapseTwo"><i
+                                        class="fa fa-arrow-right"></i> B.B.A.</li>
+                                <li (click)="searchSchool('bped')" data-bs-toggle="collapse" href="#collapseTwo"><i
+                                        class="fa fa-arrow-right"></i> B.P.Ed.</li>
+                                <li (click)="searchSchool('ma')" data-bs-toggle="collapse" href="#collapseTwo"><i
+                                        class="fa fa-arrow-right"></i> M.A.</li>
+                                <li (click)="searchSchool('msc')" data-bs-toggle="collapse" href="#collapseTwo"><i
+                                        class="fa fa-arrow-right"></i> M.Sc.</li>
+                                <li (click)="searchSchool('all')" data-bs-toggle="collapse" href="#collapseTwo"><i
+                                        class="fa fa-arrow-right"></i> View All</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="servicesHome-box">
+                            <ul style="color:white">
+                                <li (click)="searchSchool('std9to10')" data-bs-toggle="collapse" href="#collapseTwo"><i
+                                        class="fa fa-arrow-right"></i> Standard 9 to 10</li>
+                                <li (click)="searchSchool('bca')" data-bs-toggle="collapse" href="#collapseTwo"><i
+                                        class="fa fa-arrow-right"></i> B.C.A.</li>
+                                <li (click)="searchSchool('bsw')" data-bs-toggle="collapse" href="#collapseTwo"><i
+                                        class="fa fa-arrow-right"></i> B.S.W.</li>
+                                <li (click)="searchSchool('mcom')" data-bs-toggle="collapse" href="#collapseTwo"><i
+                                        class="fa fa-arrow-right"></i> M.Com.</li>
+                                <li (click)="searchSchool('ptc')" data-bs-toggle="collapse" href="#collapseTwo"><i
+                                        class="fa fa-arrow-right"></i> P.T.C.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+<div class="full-width-header header-style1 home1-modifiy">
+    <header id="rs-header" class="rs-header">
+        <div class="topbar-area dark-parimary-bg" style="background-color: #236094!important;">
+            <div class="container">
+                <div class="row y-middle" >
+                    <div class="col-md-7">
+                        <ul class="topbar-contact">
+                            <li>
+                                <i class="flaticon-email"></i>
+                                <a href="mailto:dnp@cesociety.in" style="font-size:12px !important;">
+                                    dnp@cesociety.in,</a>
+                            </li>
+                            <li>
+                                <i class="flaticon-phone"></i>
+                                <a href="tel:(02692) - 269060" style="font-size:12px !important;"> (02692) - 269060</a>
+
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-5 text-end">
+                        <ul class="topbar-right">
+                            <li class="login-register" style="font-size:12px !important;">
+                                <i class="fa fa-clock-o"></i>
+                                <a>Last Updated:27-june-2022</a>
+                            </li>
+                            <li class="login-register" style="font-size:12px !important;">
+                                <i class="fa fa-users"></i>
+                                <a>Visitor:222500</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu-area menu-sticky">
+            <div class="row middle">
+                <div class="col-lg-7 col-md-12 col-sm-12">
+                    <div class="logo-cat-wrap">
+                        <div class="logo-part">
+                            <a routerLink="/home" routerLinkActive="active">
+                                <img src="assets/images/cems/logo/33.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 text-start m1" style="padding-right:30px;">
+
+                    <ul class="topbar-right">
+                        <li class="menu-item lm">
+                            <div class="wrap">
+                                <div class="search">
+                                    <a class="card-link collapsed" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo" (click)="moreOpen()" aria-expanded="true">
+                                        <input type="text" class="searchTerm" placeholder="What are you looking for?"
+                                            style="color: #236094;     border: 3px solid #236094;">
+                                    </a>
+                                    <button type="submit" class="searchButton" style="    border: 1px solid #236094;
+                                    background: #236094;">
+                                        <i class="fa fa-search"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="menu-item lm">
+                            <a href="https://www.cesociety.in/#/basic/celebration" target="_blank">Centenary Celebration</a>
+                        </li>
+                        |
+                        <li class="menu-item lm">
+                            <a (click)="openPopup3()">News</a>
+                        </li>
+                        |
+                        <li class="menu-item lm">
+                            <a (click)="openPopup4()">Birthday</a>
+                        </li>
+                        |
+                        <li class="menu-item lm">
+                            <a href="https://www.cesociety.in/#/basic/counselling" target="_blank">Free counseling</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+        <!-- MOBILEMENU -->
+        <nav class="navbar navbarn navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03"
+                aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation"
+                (click)="isCollapsed = !isCollapsed">
+                <!-- <span class="navbar-toggler-icon"> </span> -->
+                <!-- <img class="navbar-toggler-icon" src="assets/images/shape/icon.png" alt=""> -->
+                <i class="fa fa-bars"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarColor03" [ngbCollapse]="isCollapsed">
+                <ul class="nav-menu" style="padding: 25px!important;">
+                    <li class="btn-group">
+                        <a class="btn btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false" routerLink="/home" routerLinkActive="active">Home</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item">CES Home</a> </li>
+                        </ul>
+                    </li>
+                    <li class="btn-group">
+                        <a class="btn btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">About Us</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" routerLink="/basic/history"
+                                    routerLinkActive="active">History</a> </li>
+                            <li><a class="dropdown-item" routerLink="/basic/activity"
+                                    routerLinkActive="active">Activities</a> </li>
+                        </ul>
+                    </li>
+                    <li class="btn-group">
+                        <a class="btn btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">Gallery/Media</a>
+
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" routerLink="/gallery/photos"
+                                    routerLinkActive="active">Photos</a> </li>
+                        </ul>
+                    </li>
+
+                    <li class="btn-group">
+                        <a class="btn btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">Department</a>
+
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-item"><a>Primary</a>
+                                <ul class="sub-menu">
+                                    <li class="menu-item-has-children current-menu-item">
+                                        <a>Staff Detail</a>
+                                    </li>
+                                    <li class="current-menu-item">
+                                        <a>Student Detail</a>
+                                    </li>
+
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="btn-group">
+                        <a class="btn btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false" (click)="openPopup1()">Course</a>
+                        <ul class="dropdown-menu">
+
+                        </ul>
+                    </li>
+                    <li class="btn-group">
+                        <a class="btn btn-lg" routerLink="/basic/contact" routerLinkActive="active">Contact
+                            Us</a>
+                    </li>
+                    <li class="btn-group">
+                        <a class="btn btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">More</a>
+                        <ul class="dropdown-menu">
+
+                            <li><a>Forms</a> </li>
+
+                            <li><a>Result</a>
+                            </li>
+                            <!-- <li><a class="dropdown-item" routerLink="/cems/basic/committee" routerLinkActive="active">Committee</a> </li> -->
+                            <li><a class="dropdown-item" routerLink="/more/library"
+                                    routerLinkActive="active">Library</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+
+            </div>
+        </nav>
+        <!-- MOBILEMENU -->
+
+        <div class="menu-area menu-sticky">
+            <!-- main-menu -->
+            <div class="container" style="max-width:1750px;">
+                <div class="row y-middle" style="background-color: #236094 ; height: 50px;">
+                    <div class="col-lg-12 text-end">
+                        <div class="rs-menu-area">
+                            <div class="main-menu">
+
+                                <nav class="rs-menu">
+                                    <ul class="nav-menu">
+
+                                        <li class="menu-item-has-children">
+                                            <a routerLink="/home" routerLinkActive="active">Home</a>
+                                            <ul class="sub-menu">
+                                                <li><a>CES Home</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item-has-children">
+                                            <a>About Us</a>
+                                            <ul class="sub-menu">
+                                                <li><a routerLink="/basic/history" routerLinkActive="active">History</a>
+                                                </li>
+                                                <li><a routerLink="/basic/activity"
+                                                        routerLinkActive="active">Activities</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item-has-children">
+                                            <a>Gallery/Media</a>
+
+                                            <ul class="sub-menu">
+                                                <li><a routerLink="/gallery/photos" routerLinkActive="active">Photos</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="">
+                                            <a (click)="openPopup1()">Course
+                                            </a>
+                                        </li>
+                                        <li class="menu-item-has-children">
+                                            <a>Department</a>
+
+                                            <ul class="sub-menu">
+                                                <li class="menu-item-has-children">
+                                                    <a>Primary</a>
+                                                    <ul class="sub-menu">
+                                                        <li class="current-menu-item">
+                                                            <a routerLink="/department/kg"
+                                                                routerLinkActive="active">Staff Details</a>
+                                                        </li>
+                                                        <li class="current-menu-item">
+                                                            <a routerLink="" routerLinkActive="active">Student
+                                                                Details</a>
+                                                        </li>
+
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="">
+                                            <a routerLink="/basic/contact" routerLinkActive="active">Contact
+                                                Us</a>
+                                        </li>
+                                        <li class="menu-item-has-children"><a>More</a>
+                                            <ul class="sub-menu">
+                                                <li><a>Forms</a> </li>
+                                                <li><a>Result</a>
+                                                </li>
+                                                <li><a routerLink="/more/library" routerLinkActive="active">Library</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul> <!-- //.nav-menu -->
+                                </nav>
+                            </div> <!-- //.main-menu -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- main-menu -->
+            <!-- stickymenu -->
+            <div style="max-width:100%;">
+                <div class="secondToolbar" [ngClass]="{'mat-elevation-z5' : true, 'sticky' : isSticky}">
+                    <!-- <img src="assets/images/CES_logo.png" alt=""> -->
+                    <div class="row" style="background-color: #236094 ; height: 50px;">
+                        <div class="col-lg-2 text-end mt-10">
+                            <a routerLink="/home" routerLinkActive="active">
+                                <img src="assets/images/cems/logo/22.png" alt="" width="45%">
+                            </a>
+                        </div>
+                        <div class="col-lg-10 text-start" style="margin-top: 5px;">
+                            <div class="rs-menu-area jc">
+                                <div class="main-menu">
+                                    <nav class="rs-menu">
+                                        <nav class="rs-menu">
+                                            <ul class="nav-menu">
+
+                                                <li class="menu-item-has-children">
+                                                    <a routerLink="/home" routerLinkActive="active">Home</a>
+                                                    <ul class="sub-menu">
+                                                        <li><a>CES Home</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="menu-item-has-children">
+                                                    <a>About Us</a>
+                                                    <ul class="sub-menu">
+                                                        <li><a routerLink="/basic/history"
+                                                                routerLinkActive="active">History</a>
+                                                        </li>
+                                                        <li><a routerLink="/basic/activity"
+                                                                routerLinkActive="active">Activities</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="menu-item-has-children">
+                                                    <a>Gallery/Media</a>
+
+                                                    <ul class="sub-menu">
+                                                        <li><a routerLink="/gallery/photos"
+                                                                routerLinkActive="active">Photos</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+
+                                                <li class="">
+                                                    <a (click)="openPopup1()">Course
+                                                    </a>
+                                                </li>
+                                                <li class="menu-item-has-children">
+                                                    <a>Department</a>
+
+                                                    <ul class="sub-menu">
+                                                        <li class="menu-item-has-children">
+                                                            <a>Primary</a>
+                                                            <ul class="sub-menu">
+                                                                <li class="current-menu-item">
+                                                                    <a routerLink="/department/kg"
+                                                                        routerLinkActive="active">Staff Details</a>
+                                                                </li>
+                                                                <li class="current-menu-item">
+                                                                    <a routerLink="" routerLinkActive="active">Student
+                                                                        Details</a>
+                                                                </li>
+
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="">
+                                                    <a routerLink="/basic/contact" routerLinkActive="active">Contact
+                                                        Us</a>
+                                                </li>
+                                                <li class="menu-item-has-children"><a>More</a>
+                                                    <ul class="sub-menu">
+                                                        <li><a>Forms</a> </li>
+                                                        <li><a>Result</a>
+                                                        </li>
+                                                        <li><a routerLink="/more/library"
+                                                                routerLinkActive="active">Library</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul> <!-- //.nav-menu -->
+                                        </nav>
+                                    </nav>
+                                </div> <!-- //.main-menu -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- stickymenu -->
+        </div>
+
+        <!-- Modal: modalAbandonedCart-->
+        <div class="modal fade right" tabindex="-1" role="dialog" [ngStyle]="{'display':displayStyle1}">
+            <div class="modal-dialog modal-side modal-bottom-right modal-notify modal-info" role="document">
+                <!--Content-->
+                <div class="modal-content">
+                    <!--Header-->
+                    <div class="modal-header">
+                        <p class="heading">Syllabus
+                        </p>
+                        <button type="button" class="close" (click)="closePopup()">
+                            <span aria-hidden="true" class="white-text">&times;</span>
+                        </button>
+                    </div>
+
+                    <!--Body-->
+                    <div class="modal-body">
+
+                        <div class="row">
+                            <div class="col-1"></div>
+                            <div class="col-10">
+                                <p>Our Syllabus is as prescribed by Gujarat Secondary & Higher Secondary Education Board
+                                    - Gandhinagar for Std 6, 7 and 8.</p>
+                            </div>
+                            <div class="col-3"></div>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer justify-content-center">
+                        <!-- <a type="button" class="btn btn-info">Go to cart</a> -->
+                        <a type="button" class="btn btn-outline-info waves-effect" data-dismiss="modal"
+                            (click)="closePopup()">Cancel</a>
+                    </div>
+                </div>
+                <!--/.Content-->
+            </div>
+        </div>
+        <!-- Modal: modalAbandonedCart-->
+        <!-- Modal: modalAbandonedCart-->
+        <div class="modal fade right" tabindex="-1" role="dialog" [ngStyle]="{'display':displayStyle2}">
+            <div class="modal-dialog modal-side modal-bottom-right modal-notify modal-info" role="document">
+                <!--Content-->
+                <div class="modal-content">
+                    <!--Header-->
+                    <div class="modal-header">
+                        <p class="heading">Forms
+                        </p>
+                        <button type="button" class="close" (click)="closePopup()">
+                            <span aria-hidden="true" class="white-text">&times;</span>
+                        </button>
+                    </div>
+
+                    <!--Body-->
+                    <div class="modal-body">
+
+                        <div class="row">
+                            <div class="col-1"></div>
+                            <div class="col-10">
+                                <ul style="list-style-type:decimal;">
+                                    <li><a href="http://www.cesociety.in/cems/images/Forms/Std%2011Duplicate.jpeg"
+                                            target="_blank">Duplicate Marksheet/ Duplicate Passing Certificate/
+                                            Migration મેળવવા માટેનું ફોર્મ</a> </li>
+                                    <li><a href="http://www.cesociety.in/cems/images/Forms/Std%2011Duplicate.jpeg"
+                                            target="_blank">Record Checking Form</a> </li>
+                                    <li><a href="http://www.cesociety.in/cems/images/Forms/Std%2011Duplicate.jpeg"
+                                            target="_blank">Duplicate Certificate(Std 12)</a> </li>
+                                    <li><a href="http://www.cesociety.in/cems/images/Forms/Std%2011Duplicate.jpeg"
+                                            target="_blank">Duplicate Certificate(Std 10)</a> </li>
+                                    <li><a href="http://www.cesociety.in/cems/images/Forms/Std%2011Duplicate.jpeg"
+                                            target="_blank">Verification Form</a> </li>
+                                    <li><a href="http://www.cesociety.in/cems/images/Forms/Std%2011Duplicate.jpeg"
+                                            target="_blank">Rechecking Form</a> </li>
+                                    <li><a href="http://www.cesociety.in/cems/images/Forms/Std%2011Duplicate.jpeg"
+                                            target="_blank">Duplicate Marksheet Form</a> </li>
+                                    <li><a href="http://www.cesociety.in/cems/images/Forms/Std%2011Duplicate.jpeg"
+                                            target="_blank">Duplicate Certificate Form</a> </li>
+                                    <li><a href="http://www.cesociety.in/cems/images/Forms/Std%2011Duplicate.jpeg"
+                                            target="_blank">Migration form(10 Std.)</a> </li>
+                                    <li><a href="http://www.cesociety.in/cems/images/Forms/Std%2011Duplicate.jpeg"
+                                            target="_blank">Migration form(12 Std.)</a> </li>
+                                    <li><a href="http://www.cesociety.in/cems/images/Forms/Std%2011Duplicate.jpeg"
+                                            target="_blank">Admission form</a> </li>
+
+
+                                </ul>
+                            </div>
+                            <div class="col-3"></div>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer justify-content-center">
+                        <!-- <a type="button" class="btn btn-info">Go to cart</a> -->
+                        <a type="button" class="btn btn-outline-info waves-effect" data-dismiss="modal"
+                            (click)="closePopup()">Cancel</a>
+                    </div>
+                </div>
+                <!--/.Content-->
+            </div>
+        </div>
+        <!-- Modal: modalAbandonedCart-->
+
+
+        <!--Modal: modalRelatedContent-->
+        <div class="modal right" tabindex="-1" role="dialog" [ngStyle]="{'display':displayStyle3}">
+            <div class="modal-dialog modal-side modal-bottom-right modal-notify modal-info" role="document">
+                <!--Content-->
+                <div class="modal-content">
+                    <!--Header-->
+                    <div class="modal-header">
+                        <p class="heading">TODAY'S NEWS / EVENTS</p>
+
+                        <button type="button" class="close" (click)="closePopup()">
+                            <span aria-hidden="true" class="white-text">&times;</span>
+                        </button>
+                    </div>
+
+                    <!--Body-->
+                    <div class="modal-body">
+
+                        <div class="row">
+                            <div class="col-1"></div>
+                            <div class="col-10">
+                                <h5>SHRI ALPESH N. PATEL POST GRADUATE INSTITUTE OF SCIENCE AND RESEARCH, ANAND</h5>
+
+                                <p><strong>UNIVERSITY TOPPERS OF M.SC. MLT AND DMLT DEPARTMENT</strong></p>
+                                <p><a href="assets/sanppgi/images/news/MLT%20Final%20RESULT%20with%20university%20rank%20%20IT%20CELL.pdf"
+                                        target="_blank"> M.SC MT (CLT) & DMLT
+                                        RESULT (2020 – 22)</a></p>
+                                <button type="button" class="btn btn-info btn-md" (click)="closePopup()">Close</button>
+                            </div>
+
+                            <div class="col-1"></div>
+                        </div>
+                    </div>
+
+                </div>
+                <!--/.Content-->
+            </div>
+        </div>
+        <!--Modal: modalRelatedContent-->
+        <!--Modal: modalRelatedContent-->
+        <div class="modal right" tabindex="-1" role="dialog" [ngStyle]="{'display':displayStyle4}">
+            <div class="modal-dialog modal-left modal-bottom-right modal-notify modal-info" role="document">
+                <!--Content-->
+                <div class="modal-content">
+                    <!--Header-->
+                    <div class="modal-header">
+                        <p class="heading">BIRTHDAY</p>
+
+                        <button type="button" class="close" (click)="closePopup()">
+                            <span aria-hidden="true" class="white-text">&times;</span>
+                        </button>
+                    </div>
+
+                    <!--Body-->
+                    <div class="modal-body">
+
+                        <div class="row">
+                            <div class="col-1"></div>
+                            <div class="col-10">
+
+                                <p><strong>
+                                        DR. ZARNA PATEL (Assistant Professor At Shri Alpesh N. Patel Post Graduate
+                                        Institute Of Science And Research, Anand)</strong></p>
+
+                                <button type="button" class="btn btn-info btn-md" (click)="closePopup()">Close</button>
+                            </div>
+
+                            <div class="col-1"></div>
+                        </div>
+                    </div>
+
+                </div>
+                <!--/.Content-->
+            </div>
+        </div>
+        <!--Modal: modalRelatedContent-->
+    </header>
+</div>
+</div>
+<div *ngIf="choice=='secondary'">
+<div id="accordion" class="accordion">
+    <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+        <section class="servicesHome">
+            <div class="container">
+                <div class="row card1">
+                    <a data-toggle="collapse" data-bs-parent="#accordion" data-bs-toggle="collapse" href="#collapseTwo">
+                        <i class="fa fa-times-circle" style="float: right; color: white; font-size:24px"></i></a>
+                    <h6 style="color: white;text-align: center;">View Course</h6>
+                    <div class="col-md-3">
+                        <div class="servicesHome-box">
+                            <ul>
+                                <li (click)="searchSchool('preschool')" data-bs-toggle="collapse" href="#collapseTwo"><i
+                                        class="fa fa-arrow-right"></i>Preschool</li>
+                                <li (click)="searchSchool('std11to12')" data-bs-toggle="collapse" href="#collapseTwo"><i
+                                        class="fa fa-arrow-right"></i>Standard 11 to 12</li>
+                                <li (click)="searchSchool('bcom')" data-bs-toggle="collapse" href="#collapseTwo"><i
+                                        class="fa fa-arrow-right"></i> B.Com.</li>
+                                <li (click)="searchSchool('bsc')" data-bs-toggle="collapse" href="#collapseTwo"><i
+                                        class="fa fa-arrow-right"></i> B.Sc.</li>
+                                <li (click)="searchSchool('med')" data-bs-toggle="collapse" href="#collapseTwo"><i
+                                        class="fa fa-arrow-right"></i> M.Ed.</li>
+                                <li (click)="searchSchool('phd')" data-bs-toggle="collapse" href="#collapseTwo"><i
+                                        class="fa fa-arrow-right"></i> Ph.D.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="servicesHome-box">
+                            <ul style="color:white">
+                                <li (click)="searchSchool('std1to5')" data-bs-toggle="collapse" href="#collapseTwo"><i
+                                        class="fa fa-arrow-right"></i> Standard 1 to 5</li>
+                                <li (click)="searchSchool('ba')" data-bs-toggle="collapse" href="#collapseTwo"><i
+                                        class="fa fa-arrow-right"></i> B.A.</li>
+                                <li (click)="searchSchool('bed')" data-bs-toggle="collapse" href="#collapseTwo"><i
+                                        class="fa fa-arrow-right"></i> B.Ed.</li>
+                                <li (click)="searchSchool('mlt')" data-bs-toggle="collapse" href="#collapseTwo"><i
+                                        class="fa fa-arrow-right"></i> MLT</li>
+                                <li (click)="searchSchool('msw')" data-bs-toggle="collapse" href="#collapseTwo"><i
+                                        class="fa fa-arrow-right"></i> M.S.W.</li>
+                                <li (click)="searchSchool('bscit')" data-bs-toggle="collapse" href="#collapseTwo"><i
+                                        class="fa fa-arrow-right"></i> B.Sc. IT</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="servicesHome-box">
+                            <ul style="color:white">
+                                <li (click)="searchSchool('std6to8')" data-bs-toggle="collapse" href="#collapseTwo"><i
+                                        class="fa fa-arrow-right"></i> Standard 6 to 8</li>
+                                <li (click)="searchSchool('bba')" data-bs-toggle="collapse" href="#collapseTwo"><i
+                                        class="fa fa-arrow-right"></i> B.B.A.</li>
+                                <li (click)="searchSchool('bped')" data-bs-toggle="collapse" href="#collapseTwo"><i
+                                        class="fa fa-arrow-right"></i> B.P.Ed.</li>
+                                <li (click)="searchSchool('ma')" data-bs-toggle="collapse" href="#collapseTwo"><i
+                                        class="fa fa-arrow-right"></i> M.A.</li>
+                                <li (click)="searchSchool('msc')" data-bs-toggle="collapse" href="#collapseTwo"><i
+                                        class="fa fa-arrow-right"></i> M.Sc.</li>
+                                <li (click)="searchSchool('all')" data-bs-toggle="collapse" href="#collapseTwo"><i
+                                        class="fa fa-arrow-right"></i> View All</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="servicesHome-box">
+                            <ul style="color:white">
+                                <li (click)="searchSchool('std9to10')" data-bs-toggle="collapse" href="#collapseTwo"><i
+                                        class="fa fa-arrow-right"></i> Standard 9 to 10</li>
+                                <li (click)="searchSchool('bca')" data-bs-toggle="collapse" href="#collapseTwo"><i
+                                        class="fa fa-arrow-right"></i> B.C.A.</li>
+                                <li (click)="searchSchool('bsw')" data-bs-toggle="collapse" href="#collapseTwo"><i
+                                        class="fa fa-arrow-right"></i> B.S.W.</li>
+                                <li (click)="searchSchool('mcom')" data-bs-toggle="collapse" href="#collapseTwo"><i
+                                        class="fa fa-arrow-right"></i> M.Com.</li>
+                                <li (click)="searchSchool('ptc')" data-bs-toggle="collapse" href="#collapseTwo"><i
+                                        class="fa fa-arrow-right"></i> P.T.C.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+<div class="full-width-header header-style1 home1-modifiy">
+    <header id="rs-header" class="rs-header">
+        <div class="topbar-area dark-parimary-bg">
+            <div class="container">
+                <div class="row y-middle">
+                    <div class="col-md-7">
+                        <ul class="topbar-contact">
+                            <li>
+                                <i class="flaticon-email"></i>
+                                <a href="mailto:dns@cesociety.in" style="font-size:12px !important;">
+                                    dns@cesociety.in,</a>
+                            </li>
+                            <li>
+                                <i class="flaticon-phone"></i>
+                                <a href="tel:(02692) - 240668" style="font-size:12px !important;"> (02692) - 240668</a>
+
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-5 text-end">
+                        <ul class="topbar-right">
+                            <li class="login-register" style="font-size:12px !important;">
+                                <i class="fa fa-clock-o"></i>
+                                <a>Last Updated:27-june-2022</a>
+                            </li>
+                            <li class="login-register" style="font-size:12px !important;">
+                                <i class="fa fa-users"></i>
+                                <a>Visitor:222500</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu-area menu-sticky">
+            <div class="row middle">
+                <div class="col-lg-7 col-md-12 col-sm-12">
+                    <div class="logo-cat-wrap">
+                        <div class="logo-part">
+                            <a routerLink="/home" routerLinkActive="active">
+                                <img src="assets/images/cems/logo/3.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 text-start m1" style="padding-right:30px;">
+
+                    <ul class="topbar-right">
+                        <li class="menu-item lm">
+                            <div class="wrap">
+                                <div class="search">
+                                    <a class="card-link collapsed" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo" (click)="moreOpen()" aria-expanded="true">
+                                        <input type="text" class="searchTerm" placeholder="What are you looking for?"
+                                            style="color: #203154;">
+                                    </a>
+                                    <button type="submit" class="searchButton">
+                                        <i class="fa fa-search"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="menu-item lm">
+                            <a href="http://www.cesociety.in/dnpg/Centenary.aspx">Centenary Celebration</a>
+                        </li>
+                        |
+                        <li class="menu-item lm">
+                            <a (click)="openPopup3()">News</a>
+                        </li>
+                        |
+                        <li class="menu-item lm">
+                            <a (click)="openPopup4()">Birthday</a>
+                        </li>
+                        |
+                        <li class="menu-item lm">
+                            <a href="http://www.cesociety.in/Campus-Counselling-Program.aspx">Free counseling</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+        <!-- MOBILEMENU -->
+        <nav class="navbar navbarn navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03"
+                aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation"
+                (click)="isCollapsed = !isCollapsed">
+                <!-- <span class="navbar-toggler-icon"> </span> -->
+                <!-- <img class="navbar-toggler-icon" src="assets/images/shape/icon.png" alt=""> -->
+                <i class="fa fa-bars"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarColor03" [ngbCollapse]="isCollapsed">
+                <ul class="nav-menu" style="padding: 25px!important;">
+                    <li class="btn-group">
+                        <a class="btn btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false" routerLink="/home" routerLinkActive="active">Home</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item">CES Home</a> </li>
+                        </ul>
+                    </li>
+                    <li class="btn-group">
+                        <a class="btn btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">About Us</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" routerLink="/basic/history"
+                                    routerLinkActive="active">History</a> </li>
+                            <li><a class="dropdown-item" routerLink="/basic/facility"
+                                    routerLinkActive="active">Facility</a> </li>
+                            <li><a class="dropdown-item" routerLink="/basic/activity"
+                                    routerLinkActive="active">Activity</a> </li>
+                        </ul>
+                    </li>
+                    <li class="btn-group">
+                        <a class="btn btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">Gallery/Media</a>
+
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" routerLink="/gallery/photos"
+                                    routerLinkActive="active">Photos</a> </li>
+                        </ul>
+                    </li>
+
+                    <li class="btn-group">
+                        <a class="btn btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">Department</a>
+
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-item"><a>Secondary</a>
+                                <ul class="sub-menu">
+                                    <li class="menu-item-has-children current-menu-item">
+                                        <a>Staff Detail</a>
+                                    </li>
+                                    <li class="current-menu-item">
+                                        <a>Student Detail</a>
+                                    </li>
+
+                                </ul>
+                            </li>
+                            <li class="dropdown-item"><a>Higher Secondary</a>
+                                <ul class="sub-menu">
+                                    <li class="menu-item-has-children current-menu-item">
+                                        <a>Staff Detail</a>
+                                    </li>
+                                    <li class="current-menu-item">
+                                        <a>Student Detail</a>
+                                    </li>
+
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="btn-group">
+                        <a class="btn btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false" (click)="openPopup1()">Course</a>
+                        <ul class="dropdown-menu">
+
+                        </ul>
+                    </li>
+                    <li class="btn-group">
+                        <a class="btn btn-lg" routerLink="/basic/contact" routerLinkActive="active">Contact
+                            Us</a>
+                    </li>
+                    <li class="btn-group">
+                        <a class="btn btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">More</a>
+                        <ul class="dropdown-menu">
+
+                            <li><a class="btn btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false" (click)="openPopup2()">Forms</a> </li>
+
+                            <li><a>Result</a>
+                            </li>
+                            <!-- <li><a class="dropdown-item" routerLink="/cems/basic/committee" routerLinkActive="active">Committee</a> </li> -->
+                            <li><a class="dropdown-item" routerLink="/more/library"
+                                    routerLinkActive="active">Library</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+
+            </div>
+        </nav>
+        <!-- MOBILEMENU -->
+
+        <div class="menu-area menu-sticky">
+            <!-- main-menu -->
+            <div class="container" style="max-width:1750px;">
+                <div class="row y-middle" style="background-color: #4d4d92 ; height: 50px;">
+                    <div class="col-lg-12 text-end">
+                        <div class="rs-menu-area">
+                            <div class="main-menu">
+
+                                <nav class="rs-menu">
+                                    <ul class="nav-menu">
+
+                                        <li class="menu-item-has-children">
+                                            <a routerLink="/home" routerLinkActive="active">Home</a>
+                                            <ul class="sub-menu">
+                                                <li><a>CES Home</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item-has-children">
+                                            <a>About Us</a>
+                                            <ul class="sub-menu">
+                                                <li><a routerLink="/basic/history" routerLinkActive="active">History</a>
+                                                </li>
+                                                <li><a routerLink="/basic/facility" routerLinkActive="active">Facility</a>
+                                                </li>
+                                                <li><a routerLink="/basic/activity" routerLinkActive="active">Activity</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item-has-children">
+                                            <a>Gallery/Media</a>
+
+                                            <ul class="sub-menu">
+                                                <li><a routerLink="/gallery/photos" routerLinkActive="active">Photos</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="">
+                                            <a (click)="openPopup1()">Course
+                                            </a>
+                                        </li>
+                                        <li class="menu-item-has-children">
+                                            <a>Department</a>
+
+                                            <ul class="sub-menu">
+                                                <li class="menu-item-has-children">
+                                                    <a>Secondary</a>
+                                                    <ul class="sub-menu">
+                                                        <li class="current-menu-item">
+                                                            <a routerLink="/department/kg"
+                                                                routerLinkActive="active">Staff Details</a>
+                                                        </li>
+                                                        <li class="current-menu-item">
+                                                            <a routerLink="" routerLinkActive="active">Student
+                                                                Details</a>
+                                                        </li>
+
+                                                    </ul>
+                                                </li>
+                                                <li class="menu-item-has-children">
+                                                    <a>Higher Secondary</a>
+                                                    <ul class="sub-menu">
+                                                        <li class="current-menu-item">
+                                                            <a routerLink="/department/kg"
+                                                                routerLinkActive="active">Staff Details</a>
+                                                        </li>
+                                                        <li class="current-menu-item">
+                                                            <a routerLink="" routerLinkActive="active">Student
+                                                                Details</a>
+                                                        </li>
+
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="">
+                                            <a routerLink="/basic/contact" routerLinkActive="active">Contact
+                                                Us</a>
+                                        </li>
+                                        <li class="menu-item-has-children"><a>More</a>
+                                            <ul class="sub-menu">
+                                                <li><a (click)="openPopup2()">Forms</a> </li>
+                                                <li><a>Result</a>
+                                                </li>
+                                                <li><a routerLink="/more/library" routerLinkActive="active">Library</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul> <!-- //.nav-menu -->
+                                </nav>
+                            </div> <!-- //.main-menu -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- main-menu -->
+            <!-- stickymenu -->
+            <div style="max-width:100%;">
+                <div class="secondToolbar" [ngClass]="{'mat-elevation-z5' : true, 'sticky' : isSticky}">
+                    <!-- <img src="assets/images/CES_logo.png" alt=""> -->
+                    <div class="row" style="background-color: #4d4d92 ; height: 50px;">
+                        <div class="col-lg-2 text-end mt-10">
+                            <a routerLink="/home" routerLinkActive="active">
+                                <img src="assets/images/cems/logo/2.png" alt="" width="45%">
+                            </a>
+                        </div>
+                        <div class="col-lg-10 text-start" style="margin-top: 5px;">
+                            <div class="rs-menu-area jc">
+                                <div class="main-menu">
+                                    <nav class="rs-menu">
+                                        <ul class="nav-menu">
+    
+                                            <li class="menu-item-has-children">
+                                                <a routerLink="/home" routerLinkActive="active">Home</a>
+                                                <ul class="sub-menu">
+                                                    <li><a>CES Home</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="menu-item-has-children">
+                                                <a>About Us</a>
+                                                <ul class="sub-menu">
+                                                    <li><a routerLink="/basic/history" routerLinkActive="active">History</a>
+                                                    </li>
+                                                    <li><a routerLink="/basic/facility" routerLinkActive="active">Facility</a>
+                                                    </li>
+                                                    <li><a routerLink="/basic/activity" routerLinkActive="active">Activity</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="menu-item-has-children">
+                                                <a>Gallery/Media</a>
+    
+                                                <ul class="sub-menu">
+                                                    <li><a routerLink="/gallery/photos" routerLinkActive="active">Photos</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+    
+                                            <li class="">
+                                                <a (click)="openPopup1()">Course
+                                                </a>
+                                            </li>
+                                            <li class="menu-item-has-children">
+                                                <a>Department</a>
+    
+                                                <ul class="sub-menu">
+                                                    <li class="menu-item-has-children">
+                                                        <a>Secondary</a>
+                                                        <ul class="sub-menu">
+                                                            <li class="current-menu-item">
+                                                                <a routerLink="/department/kg"
+                                                                    routerLinkActive="active">Staff Details</a>
+                                                            </li>
+                                                            <li class="current-menu-item">
+                                                                <a routerLink="" routerLinkActive="active">Student
+                                                                    Details</a>
+                                                            </li>
+    
+                                                        </ul>
+                                                    </li>
+                                                    <li class="menu-item-has-children">
+                                                        <a>Higher Secondary</a>
+                                                        <ul class="sub-menu">
+                                                            <li class="current-menu-item">
+                                                                <a routerLink="/department/kg"
+                                                                    routerLinkActive="active">Staff Details</a>
+                                                            </li>
+                                                            <li class="current-menu-item">
+                                                                <a routerLink="" routerLinkActive="active">Student
+                                                                    Details</a>
+                                                            </li>
+    
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="">
+                                                <a routerLink="/basic/contact" routerLinkActive="active">Contact
+                                                    Us</a>
+                                            </li>
+                                            <li class="menu-item-has-children"><a>More</a>
+                                                <ul class="sub-menu">
+                                                    <li><a (click)="openPopup2()">Forms</a> </li>
+                                                    <li><a>Result</a>
+                                                    </li>
+                                                    <li><a routerLink="/more/library" routerLinkActive="active">Library</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul> <!-- //.nav-menu -->
+                                    </nav>
+                                </div> <!-- //.main-menu -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- stickymenu -->
+        </div>
+
+        <!-- Modal: modalAbandonedCart-->
+        <div class="modal fade right" tabindex="-1" role="dialog" [ngStyle]="{'display':displayStyle1}">
+            <div class="modal-dialog modal-side modal-bottom-right modal-notify modal-info" role="document">
+                <!--Content-->
+                <div class="modal-content">
+                    <!--Header-->
+                    <div class="modal-header">
+                        <p class="heading">Syllabus
+                        </p>
+                        <button type="button" class="close" (click)="closePopup()">
+                            <span aria-hidden="true" class="white-text">&times;</span>
+                        </button>
+                    </div>
+
+                    <!--Body-->
+                    <div class="modal-body">
+
+                        <div class="row">
+                            <div class="col-1"></div>
+                            <div class="col-10">
+                                <p>Our Syllabus is as prescribed by Gujarat Secondary & Higher Secondary Education Board
+                                    - Gandhinagar for Std 9, 10 and 11, 12 Science, Commerce And Arts.</p>
+                            </div>
+                            <div class="col-3"></div>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer justify-content-center">
+                        <!-- <a type="button" class="btn btn-info">Go to cart</a> -->
+                        <a type="button" class="btn btn-outline-info waves-effect" data-dismiss="modal"
+                            (click)="closePopup()">Cancel</a>
+                    </div>
+                </div>
+                <!--/.Content-->
+            </div>
+        </div>
+        <!-- Modal: modalAbandonedCart-->
+        <!-- Modal: modalAbandonedCart-->
+        <div class="modal fade right" tabindex="-1" role="dialog" [ngStyle]="{'display':displayStyle2}">
+            <div class="modal-dialog modal-side modal-bottom-right modal-notify modal-info" role="document">
+                <!--Content-->
+                <div class="modal-content">
+                    <!--Header-->
+                    <div class="modal-header">
+                        <p class="heading">Forms
+                        </p>
+                        <button type="button" class="close" (click)="closePopup()">
+                            <span aria-hidden="true" class="white-text">&times;</span>
+                        </button>
+                    </div>
+
+                    <!--Body-->
+                    <div class="modal-body">
+
+                        <div class="row">
+                            <div class="col-1"></div>
+                            <div class="col-10">
+                                <ul style="list-style-type:decimal;">
+                                    <li><a href="" target="_blank">Admission form (Higher Secondary)</a> </li>
+                                    <li><a href="" target="_blank">Admission form (Secondary)</a> </li>
+
+
+                                </ul>
+                            </div>
+                            <div class="col-3"></div>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer justify-content-center">
+                        <!-- <a type="button" class="btn btn-info">Go to cart</a> -->
+                        <a type="button" class="btn btn-outline-info waves-effect" data-dismiss="modal"
+                            (click)="closePopup()">Cancel</a>
+                    </div>
+                </div>
+                <!--/.Content-->
+            </div>
+        </div>
+        <!-- Modal: modalAbandonedCart-->
+
+
+        <!--Modal: modalRelatedContent-->
+        <div class="modal right" tabindex="-1" role="dialog" [ngStyle]="{'display':displayStyle3}">
+            <div class="modal-dialog modal-side modal-bottom-right modal-notify modal-info" role="document">
+                <!--Content-->
+                <div class="modal-content">
+                    <!--Header-->
+                    <div class="modal-header">
+                        <p class="heading">TODAY'S NEWS / EVENTS</p>
+
+                        <button type="button" class="close" (click)="closePopup()">
+                            <span aria-hidden="true" class="white-text">&times;</span>
+                        </button>
+                    </div>
+
+                    <!--Body-->
+                    <div class="modal-body">
+
+                        <div class="row">
+                            <div class="col-1"></div>
+                            <div class="col-10">
+                                <h5>SHRI ALPESH N. PATEL POST GRADUATE INSTITUTE OF SCIENCE AND RESEARCH, ANAND</h5>
+
+                                <p><strong>UNIVERSITY TOPPERS OF M.SC. MLT AND DMLT DEPARTMENT</strong></p>
+                                <p><a href="assets/sanppgi/images/news/MLT%20Final%20RESULT%20with%20university%20rank%20%20IT%20CELL.pdf"
+                                        target="_blank"> M.SC MT (CLT) & DMLT
+                                        RESULT (2020 – 22)</a></p>
+                                <button type="button" class="btn btn-info btn-md" (click)="closePopup()">Close</button>
+                            </div>
+
+                            <div class="col-1"></div>
+                        </div>
+                    </div>
+
+                </div>
+                <!--/.Content-->
+            </div>
+        </div>
+        <!--Modal: modalRelatedContent-->
+        <!--Modal: modalRelatedContent-->
+        <div class="modal right" tabindex="-1" role="dialog" [ngStyle]="{'display':displayStyle4}">
+            <div class="modal-dialog modal-left modal-bottom-right modal-notify modal-info" role="document">
+                <!--Content-->
+                <div class="modal-content">
+                    <!--Header-->
+                    <div class="modal-header">
+                        <p class="heading">BIRTHDAY</p>
+
+                        <button type="button" class="close" (click)="closePopup()">
+                            <span aria-hidden="true" class="white-text">&times;</span>
+                        </button>
+                    </div>
+
+                    <!--Body-->
+                    <div class="modal-body">
+
+                        <div class="row">
+                            <div class="col-1"></div>
+                            <div class="col-10">
+
+                                <p><strong>
+                                        DR. ZARNA PATEL (Assistant Professor At Shri Alpesh N. Patel Post Graduate
+                                        Institute Of Science And Research, Anand)</strong></p>
+
+                                <button type="button" class="btn btn-info btn-md" (click)="closePopup()">Close</button>
+                            </div>
+
+                            <div class="col-1"></div>
+                        </div>
+                    </div>
+
+                </div>
+                <!--/.Content-->
+            </div>
+        </div>
+        <!--Modal: modalRelatedContent-->
+    </header>
+</div>
+</div>

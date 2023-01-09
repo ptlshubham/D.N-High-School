@@ -5,8 +5,7 @@ import { SharedModule } from '../shared/shared.module';
 import { RouterModule } from '@angular/router';
 import { GalleryRoutes } from './gallery.routing';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-
-
+import { NgxPaginationModule } from 'ngx-pagination';
 
 @NgModule({
   declarations: [
@@ -17,6 +16,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     SharedModule,
     RouterModule.forChild(GalleryRoutes),
     NgbModule,
+    NgxPaginationModule,
   ]
 })
 export class GalleryModule { }

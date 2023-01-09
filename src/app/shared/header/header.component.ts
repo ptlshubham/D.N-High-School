@@ -1,5 +1,9 @@
 import { Component, HostListener, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import { NgbModal, NgbModalConfig } from '@ng-bootstrap/ng-bootstrap';
+import { WebNavbar } from 'src/app/core/model/web-navbar.model';
+import { HomeService } from 'src/app/core/services/home.services';
+import { StaffService } from 'src/app/core/services/staff.services';
 
 @Component({
   selector: 'app-header',
@@ -10,7 +14,15 @@ export class HeaderComponent implements OnInit {
   public isCollapsed = true;
   isSticky: boolean = false;
   public collapsed = true;
-  readMore=false;
+  readMore = false;
+
+  public navDetails: WebNavbar[] = [];
+  staffDataTable: any = [];
+  siteUpdate: any = {};
+  public webNavbarModel: WebNavbar = new WebNavbar;
+  navContact: any;
+  navEmail: any;
+  navLogo: any;
   
   @HostListener('window:scroll', ['$event'])
   checkScroll() {
@@ -20,7 +32,11 @@ export class HeaderComponent implements OnInit {
   showDiv: any;
   constructor(
     private router:Router,
-    private activatedRoute: ActivatedRoute
+    private activatedRoute: ActivatedRoute,
+    config: NgbModalConfig,
+    private modalService: NgbModal,
+    private staffService: StaffService,
+    private homeService: HomeService
   ) { 
     this.choice = localStorage.getItem('choice');
   
@@ -30,45 +46,31 @@ export class HeaderComponent implements OnInit {
     this.activatedRoute.params.subscribe(params => {
       this.showDiv = params['id'];
     });
+    this.getStaffDetails();
+    this.getLastUpdateSite();
   }
   
   moreOpen(){
     this.readMore=true;
   }
-  displayStyle = "none";
-  displayStyle1 = "none";
-  displayStyle2 = "none";
-  displayStyle3 = "none";
-  displayStyle4 = "none";
-  displayStyle5 = "none";
-  openPopup() {
-    this.displayStyle = "block";
-  }
-  closePopup() {
-    this.displayStyle = "none";
-    this.displayStyle1 = "none";
-    this.displayStyle2 = "none";
-    this.displayStyle3 = "none";
-    this.displayStyle4 = "none";
-    this.displayStyle5 = "none";
-  }
-  openPopup1() {
-    this.displayStyle1 = "block";
-  }
-  openPopup2() {
-    this.displayStyle2 = "block";
-  }
-  openPopup3() {
-    this.displayStyle3 = "block";
-  }
-  openPopup4() {
-    this.displayStyle4 = "block";
-  }
-  openPopup5() {
-    this.displayStyle5 = "block";
-  }
+ 
   searchSchool(id:any){
     this.router.navigate(['/more/search',id]);
-
+  }
+  open(content: any) {
+    this.modalService.open(content, { size: 'lg', scrollable: true },);
+  }
+  openLinks(id:any){
+    this.router.navigate(['/more/links', id]);
+  }
+  getStaffDetails() {
+    this.staffService.getBirthdayListData().subscribe((res: any) => {
+      this.staffDataTable = res;
+    })
+  }
+  getLastUpdateSite() {
+    this.homeService.getLastUpdateSiteByIdURL(localStorage.getItem('InstituteId')).subscribe((res: any) => {
+      this.siteUpdate = res[0];
+    })
   }
 }

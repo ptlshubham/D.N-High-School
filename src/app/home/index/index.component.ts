@@ -12,20 +12,18 @@ export class IndexComponent implements OnInit {
   staticURL: any = '';
   choice: any;
   constructor(
-    private router:Router,
+    private router: Router,
     private homeService: HomeService
 
-  ) { 
+  ) {
   }
 
   ngOnInit(): void {
   }
-  showDiv(id:any){
+  showDiv(id: any) {
     localStorage.clear();
-
-    localStorage.setItem('choice',id);
+    localStorage.setItem('choice', id);
     this.getInstituteDetails();
-    this.router.navigate(['/home/main']);
   }
 
   getInstituteDetails() {
@@ -36,14 +34,17 @@ export class IndexComponent implements OnInit {
         localStorage.setItem('InstituteId', res[0].id);
         localStorage.setItem('InstituteName', res[0].name);
         localStorage.setItem('InstituteURL', res[0].url);
+        this.router.navigate(['/home/main']);
+
       })
     }
-    else if(this.choice=='secondary') {
+    else if (this.choice == 'secondary') {
       this.staticURL = 'www.dnhighschoolhs.ac.in';
       this.homeService.getInstituteDetailsById(this.staticURL).subscribe((res: any) => {
         localStorage.setItem('InstituteId', res[0].id);
         localStorage.setItem('InstituteName', res[0].name);
         localStorage.setItem('InstituteURL', res[0].url);
+        this.router.navigate(['/home/main']);
       })
     }
 

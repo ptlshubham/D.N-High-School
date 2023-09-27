@@ -31,7 +31,6 @@ export class StaffDetailsComponent implements OnInit {
   }
   selectDepartment(val: any) {
     this.selectedDepartment = val;
-    debugger
     this.filterData = [];
     this.staffDataTable.forEach((element: any) => {
       if (element.departmentName == this.selectedDepartment) {
@@ -47,8 +46,9 @@ export class StaffDetailsComponent implements OnInit {
     this.filterData = [];
     this.staffService.getAllStaffDetailsData(localStorage.getItem('InstituteId')).subscribe((res: any) => {
       this.staffDataTable = res;
+      if(this.selectedDepartment=='all'){
       this.filterData = res;
-
+      }
     })
   }
 }

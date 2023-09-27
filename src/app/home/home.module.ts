@@ -12,6 +12,7 @@ import { RightImageTextComponent } from './right-image-text/right-image-text.com
 import { SectionCoursesComponent } from './section-courses/section-courses.component';
 import { StatisticsIncrementorComponent } from './statistics-incrementor/statistics-incrementor.component';
 import { IndexComponent } from './index/index.component';
+import { QuickConnectComponent } from './quick-connect/quick-connect.component';
 
 
 
@@ -25,6 +26,7 @@ import { IndexComponent } from './index/index.component';
     SectionCoursesComponent,
     StatisticsIncrementorComponent,
     IndexComponent,
+    QuickConnectComponent,
     
   ],
   imports: [

@@ -36,7 +36,7 @@
                                     <h4 style="color: red;text-align: center;" *ngIf="studentList.length==0">
                                         Data
                                         Not Found !</h4>
-                                    <div class="col-sm-6 col-lg-6"
+                                    <div class="col-sm-12 col-lg-12"
                                         *ngFor="let s of studentList | paginate: {id:'listing1', itemsPerPage: 6, currentPage: pa };let i=index">
                                         <h5 style="text-align: center;">{{s.title}}</h5>
                                         <div [innerHTML]="s.details"></div>

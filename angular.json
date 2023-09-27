@@ -6,7 +6,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ces-society": {
+    "DN-High-School": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -20,7 +20,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/ces-society",
+            "outputPath": "dist/DN-High-School",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -99,10 +99,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "ces-society:build:production"
+              "browserTarget": "DN-High-School:build:production"
             },
             "development": {
-              "browserTarget": "ces-society:build:development"
+              "browserTarget": "DN-High-School:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -110,7 +110,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ces-society:build"
+            "browserTarget": "DN-High-School:build"
           }
         },
         "test": {
@@ -161,5 +161,5 @@
       }
     }
   },
-  "defaultProject": "ces-society"
+  "defaultProject": "DN-High-School"
 }
